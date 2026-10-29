@@ -321,7 +321,7 @@
           </div>
 
           <div class="form-group">
-            <label for="criancas06Qtd">Crianças 0 a 6 anos (R$ 0,00)</label>
+            <label for="criancas06Qtd">Crianças 0 a 5 anos (R$ 0,00)</label>
             <select id="criancas06Qtd">
               <option value="0" selected>Nenhuma</option>
               <option value="1">1 Criança</option>
@@ -390,7 +390,7 @@
           <span id="subTotalAdultos">R$ 189,00</span>
         </div>
         <div class="summary-line" id="linhaCriancas06" style="display: none;">
-          <span id="descCriancas06">0x Criança (0 a 6 anos)</span>
+          <span id="descCriancas06">0x Criança (0 a 5 anos)</span>
           <span id="subTotalCriancas06">R$ 0,00</span>
         </div>
         <div class="summary-line" id="linhaCriancas" style="display: none;">
@@ -459,7 +459,7 @@
 
       if (qtdCriancas06 > 0) {
         linhaCriancas06.style.display = 'flex';
-        descCriancas06.textContent = `${qtdCriancas06}x Criança${qtdCriancas06 > 1 ? 's' : ''} (0 a 6 anos)`;
+        descCriancas06.textContent = `${qtdCriancas06}x Criança${qtdCriancas06 > 1 ? 's' : ''} (0 a 5 anos)`;
         subTotalCriancas06.textContent = `R$ ${totalCriancas06Val.toFixed(2).replace('.', ',')}`;
       } else {
         linhaCriancas06.style.display = 'none';
